@@ -1,0 +1,74 @@
+/* https://stackoverflow.com/questions/69261011/disable-pull-to-refresh-in-ios-15-safari */
+
+html, body {
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#clocks {
+  height: 100vh;
+  overflow-y auto;
+  --webkit-overflow-scrolling: touch;
+}
+
+#analog {
+  margin: 5px;
+  height: 600px;
+  width: 600px;
+}
+
+#analog svg {
+  height: 600px;
+  width: 600px;
+}
+
+#analog circle {
+  fill: white;
+  stroke: black;
+  stroke-width: 5px;
+}
+
+#analog #center {
+  fill: black;
+  stroke: black;
+}
+
+#analog .hand {
+  stroke: black;
+  stroke-width: 6px;
+}
+
+#analog #min-grab {
+  stroke: none; 
+  fill: rgba(256,256,256, 0);
+}
+
+#analog .label {
+  font: bold 30px monospace; 
+  text-anchor: middle;
+}
+
+#analog .tick {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+
+#digital {
+  margin: 5px;
+  height: 400px;
+  width: 400px;
+}
+
+#digital .buttons {
+}
+
+#digital .buttons button {
+  font: 40px monospace;
+}
+
+#digital-face {
+  font: 50px monospace;
+}
