@@ -37,6 +37,7 @@ jobs:
       - name: build
         run: |
           cd $GITHUB_WORKSPACE
+          npm install
           npx shadow-cljs release ui
 
       # Runs a single command using the runners shell
