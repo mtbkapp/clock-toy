@@ -39,6 +39,11 @@ jobs:
           cd $GITHUB_WORKSPACE
           npm install
           npx shadow-cljs release ui
+          
+      - name: deploy to gh pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: public
 
       # Runs a single command using the runners shell
       #- name: Run a one-line script
